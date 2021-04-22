@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_marginRight="20dp"
+     android:layout_marginLeft="20dp"
+     android:orientation="horizontal">
+     
+     <TextView 
+         android:id="@+id/my_cars_tv1"
+         android:layout_width="0dp"
+         android:layout_weight="3"
+         android:layout_height="wrap_content"
+         android:text="0000-AA"
+         android:paddingTop="10sp"
+         android:paddingBottom="10sp"
+         android:textSize="18sp"
+         android:gravity="center"/>
+     
+     <TextView 
+         android:id="@+id/my_cars_tv2"
+         android:layout_width="0dp"
+         android:layout_weight="3"
+         android:layout_height="wrap_content"
+         android:text="------"
+         android:paddingTop="10sp"
+         android:paddingBottom="10sp"
+         android:textSize="18sp"
+         android:gravity="center"/>
+     
+     <ImageView 
+         android:id="@+id/remove_this_car_btn"
+         android:layout_width="0dp"
+         android:layout_weight="1"
+         android:layout_height="40dp"
+         android:padding="5dp"
+         android:src="@drawable/but_owner_mycar_off"
+         android:gravity="center"/>
+     
+ </LinearLayout>
+
+

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="登錄愛車"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:padding="18sp"
+            android:textSize="18sp"
+            android:background="#474747"/>
+        
+        <LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:layout_marginTop="35dp"
+			android:layout_marginLeft="10dp"
+			android:layout_marginRight="10dp"
+			android:background="#3F484F">
+			
+			<TextView 
+			    android:id="@+id/bonus_history_title_tv1"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:text="我的愛車"
+			    android:paddingTop="10sp"
+			    android:paddingBottom="10sp"
+			    android:textSize="18sp"
+			    android:gravity="center"/>
+			
+			<LinearLayout
+	            android:id="@+id/my_car_list_ll"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"/>
+    
+		</LinearLayout>
+        
+        <TextView 
+		    android:id="@+id/bonus_history_title_tv1"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:text="※移除所有愛車資料將影響您的會員功能"
+		    android:layout_marginTop="10dp"
+		    android:layout_marginLeft="10dp"
+			android:layout_marginRight="10dp"
+		    android:textSize="16sp"
+		    android:textColor="#E3323E"
+		    android:gravity="center"/>
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical">
+            
+            <TextView 
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:text="登錄其他愛車："
+			    android:textSize="18sp"
+			    android:layout_marginTop="35dp"
+			    android:gravity="left"/>
+            <EditText 
+                android:id="@+id/input_plateno_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="請輸入車牌號碼"/>
+            <TextView 
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:text="填寫範例：請輸入 1234-AB 或 ABC-123"
+			    android:textSize="16sp"
+			    android:gravity="left"/>
+            
+        </LinearLayout>
+        
+        <Button 
+            android:id="@+id/register_your_car"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:background="#E00013"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:padding="8dp"
+            android:text="送出"/>
+        
+    </LinearLayout>
+
+</ScrollView>

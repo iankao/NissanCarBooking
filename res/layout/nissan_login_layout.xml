@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <RelativeLayout 
+        android:id="@+id/login_content_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+        <TextView 
+            android:id="@+id/login_page_title"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:paddingTop="22dp"
+	        android:paddingBottom="22dp"
+	        android:text="NISSAN車主專屬APP簡介"
+	        android:textSize="22dp"
+	        android:gravity="center"/>
+        
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/login_page_title"
+            android:background="#ff828282"/>
+        
+	    <FrameLayout 
+	        android:id="@+id/login_content_fl"
+	        android:layout_width="match_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_below="@id/login_page_title">
+		    
+		    <ScrollView
+		        android:id="@+id/login_page_statement_sv"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:layout_below="@id/login_page_title">
+		        
+			    <LinearLayout 
+			        android:id="@+id/login_page_ll"
+			        android:orientation="vertical"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content">
+			        
+			        <RelativeLayout 
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_marginTop="10dp"
+			            android:paddingLeft="10dp"
+			            android:paddingRight="10dp">
+			            
+			            <TextView 
+			                android:id="@+id/login_text_01"
+			                android:layout_width="match_parent"
+			                android:layout_height="wrap_content"
+			                android:text="親愛的 NISSAN 車主您好，NISSAN 車主專屬 APP 將讓你獨享以下服務："
+			                android:textSize="18dp"/>
+			            
+			            <TextView 
+			                android:id="@+id/login_text_02"
+			                android:layout_marginTop="22dp"
+			                android:layout_width="match_parent"
+			                android:layout_height="wrap_content"
+			                android:text="*了解車主權益"
+			                android:layout_below="@id/login_text_01"
+			                android:textSize="18dp"/>
+			            
+			            <TextView 
+			                android:id="@+id/login_text_03"
+			                android:layout_width="match_parent"
+			                android:layout_height="wrap_content"
+			                android:text="*愛車資料查詢"
+			                android:layout_below="@id/login_text_02"
+			                android:textSize="18dp"/>
+			            
+			            <TextView 
+			                android:id="@+id/login_text_04"
+			                android:layout_width="match_parent"
+			                android:layout_height="wrap_content"
+			                android:text="*預約保修"
+			                android:layout_below="@id/login_text_03"
+			                android:textSize="18dp"/>
+			            
+			            <TextView 
+			                android:id="@+id/login_text_05"
+			                android:layout_width="match_parent"
+			                android:layout_height="wrap_content"
+			                android:text="*紅利積點查詢"
+			                android:layout_below="@id/login_text_04"
+			                android:textSize="18dp"/>
+			            
+			            <TextView 
+			                android:id="@+id/login_text_06"
+			                android:layout_width="match_parent"
+			                android:layout_height="wrap_content"
+			                android:text="*保修紀錄查詢"
+			                android:layout_below="@id/login_text_05"
+			                android:textSize="18dp"/>
+			            
+			            <TextView 
+			                android:id="@+id/login_text_07"
+			                android:layout_marginTop="22dp"
+			                android:layout_width="match_parent"
+			                android:layout_height="wrap_content"
+			                android:text="請先登入您的車主帳號(NISSAN官網會員帳號)，若您尚未註冊，請耐心填寫會員資料，祝您使用愉快!"
+			                android:layout_below="@id/login_text_06"
+			                android:textSize="18dp"/>
+			            
+			        </RelativeLayout>
+			        
+			    </LinearLayout>
+		
+		    </ScrollView>
+	    
+	    </FrameLayout>
+
+    </RelativeLayout>
+    
+    <Button
+        android:layout_gravity="center_horizontal|bottom"
+        android:gravity="center"
+        android:layout_marginBottom="50dp"
+        android:id="@+id/start_to_use_app_btn"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:textColor="#fff"
+        android:background="#E00013"
+        android:text="開始使用 " />
+    
+</FrameLayout>

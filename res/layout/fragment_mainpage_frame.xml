@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_mainmenu"
+    tools:context="com.nissan.nissancar.MainActivity$PlaceholderFragment" >
+
+    <FrameLayout 
+        android:id="@+id/main_page_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:src="@drawable/img_mainmenu_logo" />
+        
+    </FrameLayout>
+    
+    <FrameLayout 
+        android:id="@+id/main_page_content_fl"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        
+    </FrameLayout>
+    
+    <LinearLayout 
+        android:id="@+id/bottom_option_ll"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:padding="5dp"
+        android:background="@drawable/bg_mainmenu_bottom">
+        
+        <FrameLayout 
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            
+            <ImageButton
+	            android:id="@+id/tab_home_btn" 
+	            android:layout_width="wrap_content"
+	            android:layout_height="match_parent"
+	            android:layout_marginTop="2dp"
+	            android:layout_marginBottom="2dp"
+	            android:layout_gravity="center"
+	            android:background="@null"
+	            android:scaleType="centerInside"
+	            android:src="@drawable/selector_bottom_button_home"/>
+            
+        </FrameLayout>
+        
+        
+        <FrameLayout 
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            
+            <ImageButton
+	            android:id="@+id/tab_setting_btn" 
+	            android:layout_width="wrap_content"
+	            android:layout_height="match_parent"
+	            android:layout_marginTop="2dp"
+	            android:layout_marginBottom="2dp"
+	            android:layout_gravity="center"
+	            android:background="@null"
+	            android:scaleType="centerInside"
+	            android:src="@drawable/selector_bottom_button_setting"/>
+            
+        </FrameLayout>
+        
+        <FrameLayout 
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            
+            <ImageButton
+	            android:id="@+id/tab_more_btn" 
+	            android:layout_width="wrap_content"
+	            android:layout_height="match_parent"
+	            android:layout_marginTop="2dp"
+	            android:layout_marginBottom="2dp"
+	            android:layout_gravity="center"
+	            android:background="@null"
+	            android:scaleType="centerInside"
+	            android:src="@drawable/selector_bottom_button_more"/>
+            
+        </FrameLayout>
+        
+    </LinearLayout>
+
+</LinearLayout>

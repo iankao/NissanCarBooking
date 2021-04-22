@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/service_history_content_ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical" >
+    
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="請選擇查詢車號："
+        android:textSize="22dp"/>
+    
+    <Spinner
+        android:id="@+id/chooseing_placeno_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    
+    <TextView 
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="您的預約保修紀錄："
+        android:textSize="22dp"/>
+    
+    <ExpandableListView
+        android:id="@+id/maintenance_history_expandlist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:groupIndicator="@drawable/selector_expandablelist_indicator" >
+     
+	 </ExpandableListView>
+    
+</LinearLayout>
+

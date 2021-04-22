@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="vertical">
+        
+        <TextView 
+            android:id="@+id/search_result_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="依   查詢結果"
+            android:textSize="16sp"/>
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#ff333333">
+            
+            <TextView 
+	            android:layout_width="0dp"
+	            android:layout_weight="2"
+	            android:layout_height="wrap_content"
+	            android:text="地區"
+	            android:paddingTop="12sp"
+	            android:paddingBottom="12sp"
+	            android:gravity="center"
+	            android:textSize="16sp"/>
+            <TextView 
+	            android:layout_width="0dp"
+	            android:layout_weight="3"
+	            android:layout_height="wrap_content"
+	            android:text="服務廠"
+	            android:paddingTop="12sp"
+	            android:paddingBottom="12sp"
+	            android:gravity="center"
+	            android:textSize="16sp"/>
+            <TextView 
+	            android:layout_width="0dp"
+	            android:layout_weight="3"
+	            android:layout_height="wrap_content"
+	            android:text="距離"
+	            android:paddingTop="12sp"
+	            android:paddingBottom="12sp"
+	            android:gravity="center"
+	            android:textSize="16sp"/>
+            
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:id="@+id/location_list_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="45dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:orientation="vertical">
+            
+            <TextView 
+	           android:layout_width="match_parent"
+	           android:layout_height="wrap_content"
+	           android:layout_marginTop="20dp"
+	           android:text="NISSAN的服務據點遍及全省，隨時為您提供最詳盡確實的維修服務。"
+	           android:textSize="14sp"
+	           android:textColor="#fff"/>
+            
+            <TextView 
+	           android:layout_width="match_parent"
+	           android:layout_height="wrap_content"
+	           android:layout_marginTop="20dp"
+	           android:text="服務廠"
+	           android:textSize="14sp"
+	           android:textColor="#fff"/>
+            
+            <TextView 
+	           android:layout_width="match_parent"
+	           android:layout_height="wrap_content"
+	           android:layout_marginTop="20dp"
+	           android:text="日間  營業時間為 8:30~17:30"
+	           android:textSize="14sp"
+	           android:textColor="#fff"/>
+            
+            <TextView 
+	           android:layout_width="match_parent"
+	           android:layout_height="wrap_content"
+	           android:layout_marginTop="5dp"
+	           android:text="夜間  營業時間為 17:30~20:00(接車至19:00)"
+	           android:textSize="14sp"
+	           android:textColor="#fff"/>
+            
+            <TextView 
+	           android:layout_width="match_parent"
+	           android:layout_height="wrap_content"
+	           android:layout_marginTop="5dp"
+	           android:text="假日  營業時間為 8:30~17:30(建議事先預約)"
+	           android:textSize="14sp"
+	           android:textColor="#fff"/>
+            
+            <TextView 
+	           android:layout_width="match_parent"
+	           android:layout_height="wrap_content"
+	           android:layout_marginTop="20dp"
+	           android:text="夜間與假日營業時間部份服務廠有所不同，敬請參閱各服務廠服務說明資訊。"
+	           android:textSize="14sp"
+	           android:textColor="#fff"/>
+            
+        </LinearLayout>
+        
+    </LinearLayout>
+    
+</ScrollView>

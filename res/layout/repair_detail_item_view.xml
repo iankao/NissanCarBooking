@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:orientation="horizontal">
+     
+     <TextView 
+         android:id="@+id/repair_list_tv1"
+         android:layout_width="0dp"
+         android:layout_weight="2"
+         android:layout_height="wrap_content"
+         android:text="工資"
+         android:paddingTop="10sp"
+         android:paddingBottom="10sp"
+         android:textSize="18sp"
+         android:gravity="center"/>
+     
+     <TextView 
+         android:id="@+id/repair_list_tv2"
+         android:layout_width="0dp"
+         android:layout_weight="4"
+         android:layout_height="wrap_content"
+         android:text="維修項目"
+         android:paddingTop="10sp"
+         android:paddingBottom="10sp"
+         android:textSize="18sp"
+         android:gravity="center"/>
+     
+     <TextView 
+         android:id="@+id/repair_list_tv3"
+         android:layout_width="0dp"
+         android:layout_weight="1"
+         android:layout_height="wrap_content"
+         android:text="數量"
+         android:paddingTop="10sp"
+         android:paddingBottom="10sp"
+         android:textSize="18sp"
+         android:gravity="center"/>
+     
+     
+ </LinearLayout>
+
+

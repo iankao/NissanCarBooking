@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sub_tabview_content_rl"
+    android:padding="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <Spinner
+        android:id="@+id/choose_your_cities_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+    </Spinner>
+    
+    <Spinner
+        android:id="@+id/choose_your_district_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/choose_your_cities_spinner">
+    </Spinner>
+    
+    <Spinner
+        android:id="@+id/choose_your_factory_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/choose_your_district_spinner">
+    </Spinner>
+    
+</RelativeLayout>
+

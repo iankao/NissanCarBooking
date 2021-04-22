@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="修改個人基本資料"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:padding="18sp"
+            android:textSize="18sp"
+            android:background="#474747"/>
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+            
+            <TextView 
+	            android:layout_width="0dp"
+	            android:layout_weight="1"
+	            android:layout_height="wrap_content"
+	            android:text="姓        名："
+	            android:textColor="#fff"
+	            android:gravity="right"
+	            android:textSize="18sp"/>
+            
+            <EditText 
+                android:id="@+id/name_et"
+	            android:layout_width="0dp"
+	            android:layout_weight="2"
+	            android:layout_height="wrap_content"
+	            android:gravity="left"
+	            android:textSize="18sp"/>
+            
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+            
+            <TextView 
+	            android:layout_width="0dp"
+	            android:layout_weight="1"
+	            android:layout_height="wrap_content"
+	            android:text="手機號碼："
+	            android:textColor="#fff"
+	            android:gravity="right"
+	            android:textSize="18sp"/>
+            
+            <EditText 
+                android:id="@+id/number_et"
+	            android:layout_width="0dp"
+	            android:layout_weight="2"
+	            android:layout_height="wrap_content"
+	            android:gravity="left"
+	            android:textSize="18sp"/>
+            
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+            
+            <TextView 
+	            android:layout_width="0dp"
+	            android:layout_weight="1"
+	            android:layout_height="wrap_content"
+	            android:text="E-mail："
+	            android:textColor="#fff"
+	            android:gravity="right"
+	            android:textSize="18sp"/>
+            
+            <EditText 
+                android:id="@+id/email_et"
+	            android:layout_width="0dp"
+	            android:layout_weight="2"
+	            android:layout_height="wrap_content"
+	            android:gravity="left"
+	            android:textSize="18sp"/>
+            
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+            
+            <TextView 
+	            android:layout_width="0dp"
+	            android:layout_weight="1"
+	            android:layout_height="wrap_content"
+	            android:text="性        別："
+	            android:textColor="#fff"
+	            android:gravity="right"
+	            android:textSize="18sp"/>
+            
+            <RadioGroup 
+                android:id="@+id/gender_rg"
+                android:layout_width="0dp"
+	            android:layout_weight="2"
+	            android:layout_height="wrap_content"
+	            android:orientation="horizontal">
+                
+                <RadioButton 
+                    android:id="@+id/male"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:text="先生"
+                    android:layout_height="wrap_content"/>
+                
+                <RadioButton 
+                    android:id="@+id/female"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:text="小姐"
+                    android:layout_height="wrap_content"/>
+                
+            </RadioGroup>
+            
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+            
+            <TextView 
+	            android:layout_width="0dp"
+	            android:layout_weight="1"
+	            android:layout_height="wrap_content"
+	            android:text="生        日："
+	            android:textColor="#fff"
+	            android:gravity="right"
+	            android:textSize="18sp"/>
+            
+            <EditText 
+                android:id="@+id/birthday_et"
+	            android:layout_width="0dp"
+	            android:layout_weight="2"
+	            android:layout_height="wrap_content"
+	            android:gravity="left"
+	            android:textSize="18sp"/>
+            
+        </LinearLayout>
+        
+        <CheckBox 
+            android:id="@+id/edmSubscribed_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:checked="true"
+            android:layout_gravity="right"
+            android:text="我要訂閱 Nissan 電子報"/>
+        
+        <Button 
+            android:id="@+id/send_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:background="#E00013"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:padding="8dp"
+            android:text="送出"/>
+        
+    </LinearLayout>
+
+</ScrollView>

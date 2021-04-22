@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            
+            <TextView 
+                android:id="@+id/points_last_staic_date_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="截至昨日 0000-00-00 止"
+                android:textSize="18sp"
+                android:paddingTop="10sp"/>
+            
+            <TextView 
+                android:id="@+id/points_sum_current"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="您目前共有:"
+                android:paddingTop="10sp"
+                android:textSize="18sp"
+                android:layout_below="@id/points_last_staic_date_tv"/>
+            
+        </RelativeLayout>
+        
+        <LinearLayout 
+            android:id="@+id/car_points_list_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+	        
+        </LinearLayout>
+        
+        <Button 
+            android:id="@+id/query_points_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:background="#E00013"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:padding="8dp"
+            android:text="紅利積點查詢"/>
+        
+        <Button 
+            android:id="@+id/points_getting_rule_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:background="#E00013"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:padding="8dp"
+            android:text="紅利積點規則"/>
+        
+        <Button 
+            android:id="@+id/points_gift_present_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:background="#E00013"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:padding="8dp"
+            android:text="紅利精品展示"/>
+        
+    </LinearLayout>
+
+</ScrollView>

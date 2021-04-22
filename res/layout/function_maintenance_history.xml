@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+	    
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+	        
+            <TextView 
+                android:id="@+id/car_number"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="車號："
+	            android:textSize="18sp"/>
+            
+            <Spinner
+	            android:id="@+id/car_number_spinner"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@id/car_number"
+	            android:ems="10" >
+
+	            <requestFocus />
+	        </Spinner>
+            
+        </RelativeLayout>
+        
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            
+            <TextView 
+                android:id="@+id/my_car_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="車  型："/>
+            
+	        <TextView
+	            android:id="@+id/my_car_type_value"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="----"
+	            android:textSize="18sp"
+	            android:layout_toRightOf="@id/my_car_type">
+	        </TextView>
+            
+        </RelativeLayout>
+        
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            
+            <TextView 
+                android:id="@+id/my_car_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="您最近一次保修紀錄為："
+                android:textSize="18sp"/>
+            
+        </RelativeLayout>
+        
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            
+            <TextView 
+                android:id="@+id/last_maintenance_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="日期："/>
+            
+            <TextView
+                android:id="@+id/last_maintenance_date_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="----"
+                android:textSize="18sp"
+                android:layout_toRightOf="@id/last_maintenance_date">
+            </TextView>
+            
+        </RelativeLayout>
+        
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            
+            <TextView 
+                android:id="@+id/my_car_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="進廠里程："
+                android:textSize="18sp"/>
+            
+            <TextView
+                android:id="@+id/my_car_distance_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="----"
+                android:textSize="18sp"
+                android:layout_toRightOf="@id/my_car_distance">
+            </TextView>
+            
+        </RelativeLayout>
+        
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            
+            <TextView 
+                android:id="@+id/last_maintenance_factory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="服務據點："/>
+            
+            <TextView
+                android:id="@+id/last_maintenance_factory_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="----"
+                android:textSize="18sp"
+                android:layout_toRightOf="@id/last_maintenance_factory">
+            </TextView>
+            
+        </RelativeLayout>
+        
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            
+            <TextView 
+                android:id="@+id/last_maintanence_waiter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="接待："/>
+            
+            <TextView
+                android:id="@+id/last_maintanence_waiter_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="---"
+                android:textSize="18sp"
+                android:layout_toRightOf="@id/last_maintanence_waiter">
+            </TextView>
+            
+        </RelativeLayout>
+        
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            
+            <TextView 
+                android:id="@+id/last_maintanence_engineer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="技師："/>
+            
+            <TextView
+                android:id="@+id/last_maintanence_engineer_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="----"
+                android:textSize="18sp"
+                android:layout_toRightOf="@id/last_maintanence_engineer"/>
+            
+        </RelativeLayout>
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:layout_marginBottom="12dp"
+            android:text="保修紀錄查詢"
+            android:textSize="18sp"/>
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="12dp"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:background="#ff666666">    
+	        <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="18sp"
+	            android:text="日期範圍："/>
+	        
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="車輛若有過戶轉讓等變動，新車主/駕駛人僅能查詢變動後之維修紀錄，以保護前任車主個資交易隱私權益。"
+	            android:textSize="18sp"/>
+        </LinearLayout>    
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            
+            <TextView 
+                android:id="@+id/from_date_01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="西元："/>
+            
+            <Spinner
+                android:id="@+id/from_year_spinner"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="40dp"/>
+            
+            <TextView 
+                android:id="@+id/from_date_03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="月份："
+                android:textSize="18sp"/>
+                    
+            <Spinner
+                android:id="@+id/from_month_spinner"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="40dp"/>
+            
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            
+            <TextView 
+                android:id="@+id/to_date_01"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="18sp"
+	            android:text="西元："/>
+	        
+	        <Spinner
+	            android:id="@+id/to_year_spinner"
+	            android:layout_width="0dp"
+                android:layout_weight="2"
+	            android:layout_height="40dp"/>
+	        
+	        <TextView 
+                android:id="@+id/to_date_03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="月份："
+                android:textSize="18sp"/>
+	                
+            <Spinner
+                android:id="@+id/to_month_spinner"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="40dp"/>
+            
+        </LinearLayout>
+        
+        <Button 
+            android:id="@+id/start_query_btn"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:background="#E00013"
+            android:textColor="#fff"
+            android:padding="3dp"
+            android:textSize="22dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="查詢  "/>
+        
+    </LinearLayout>
+
+</ScrollView>

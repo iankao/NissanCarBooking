@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item 
+        android:drawable="@drawable/but_set_push_on"
+        android:checked="true"></item>
+    <item 
+        android:drawable="@drawable/but_set_push_off"
+        android:checked="false"></item>
+    
+</selector>

@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+        
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="感謝您對 NISSAN 的關注與愛護，如果您對我們提供的產品即付物有任何意見，隨時歡迎您與我們聯絡，為了您的便利，您可以參考常見問題！若常見問題 Ｑ＆Ａ仍無法解決您的問題，您可以透過線上填寫下列表格，我們將儘速回覆您，謝謝！"/>
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+            
+            <TextView 
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                android:textSize="20sp"
+                android:gravity="center_vertical"
+                android:text="留言類別："/>
+            
+            <Spinner 
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="match_parent"/>
+            
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+            
+            <TextView 
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                android:textSize="20sp"
+                android:gravity="center_vertical"
+                android:text="姓名："/>
+            
+            <EditText 
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="match_parent"/>
+            
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+            
+            <TextView 
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                android:textSize="20sp"
+                android:gravity="center_vertical"
+                android:text="e-mail："/>
+            
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="match_parent"/>
+            
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+            
+            <TextView 
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                android:textSize="20sp"
+                android:gravity="center_vertical"
+                android:text="手機號碼："/>
+            
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="match_parent"/>
+            
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+            
+            <TextView 
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                android:textSize="16sp"
+                android:gravity="center_vertical"
+                android:text="其他聯絡電話："/>
+            
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="match_parent"/>
+            
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+            
+            <TextView 
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                android:textSize="16sp"
+                android:gravity="center_vertical"
+                android:text="方便聯絡時間："/>
+            
+            <Spinner 
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="match_parent"/>
+            
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+            
+            <TextView 
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                android:textSize="16sp"
+                android:gravity="center_vertical"
+                android:text="優先聯絡方式："/>
+            
+            <Spinner 
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="match_parent"/>
+            
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:background="#333333">
+            
+            <LinearLayout 
+	            android:layout_width="match_parent"
+	            android:layout_height="50dp"
+	            android:orientation="horizontal">
+	            
+	            <TextView 
+	                android:layout_width="0dp"
+	                android:layout_weight="2"
+	                android:layout_height="match_parent"
+	                android:textSize="16sp"
+	                android:gravity="center_vertical"
+	                android:text="車牌號碼："/>
+	            
+	            <EditText
+	                android:layout_width="0dp"
+	                android:layout_weight="3"
+	                android:layout_height="match_parent"/>
+	            
+	        </LinearLayout>
+        
+            <LinearLayout 
+	            android:layout_width="match_parent"
+	            android:layout_height="50dp"
+	            android:orientation="horizontal">
+	            
+	            <TextView 
+	                android:layout_width="0dp"
+	                android:layout_weight="2"
+	                android:layout_height="match_parent"
+	                android:textSize="16sp"
+	                android:gravity="center_vertical"
+	                android:text="銷售服務據點："/>
+	            
+	            <EditText
+	                android:layout_width="0dp"
+	                android:layout_weight="3"
+	                android:layout_height="match_parent"/>
+	            
+	        </LinearLayout>
+            
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="18sp"
+                android:gravity="center_vertical"
+                android:text="留言內容："/>
+            
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="最多留言 500 字"/>
+            
+        </LinearLayout>
+        
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp">
+            
+	        <Button 
+	            android:id="@+id/booking_service_btn"
+	            android:layout_width="150dp"
+	            android:layout_height="wrap_content"
+	            android:textColor="#ffffff"
+	            android:background="#E00013"
+	            android:padding="3dp"
+	            android:textSize="22dp"
+	            android:layout_centerInParent="true"
+	            android:text="確認送出"/>
+	        
+	     </RelativeLayout>
+        
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:id="@+id/more_upper_content_ll"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical">
+        
+	    <ImageButton 
+	        android:id="@+id/more_page_btn1"
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="1"
+	        android:background="@drawable/selector_more_button_1"/>
+	    
+	    <ImageButton 
+	        android:id="@+id/more_page_btn2"
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="1"
+	        android:background="@drawable/selector_more_button_2"/>
+	    
+	    <ImageButton 
+	        android:id="@+id/more_page_btn3"
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="1"
+	        android:background="@drawable/selector_more_button_3"/>
+	    
+	    <ImageButton 
+	        android:id="@+id/more_page_btn4"
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="1"
+	        android:background="@drawable/selector_more_button_4"/>
+	    
+    </LinearLayout>
+    <LinearLayout 
+        android:id="@+id/more_others_app_buttons_ll"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+        
+        <ImageButton 
+            android:id="@+id/more_sub_btn1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:background="@drawable/selector_more_button_5"/>
+        
+        <ImageButton 
+            android:id="@+id/more_sub_btn2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:background="@drawable/selector_more_button_6"/>
+        
+        <ImageButton 
+            android:id="@+id/more_sub_btn3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:background="@drawable/selector_more_button_7"/>
+        
+        <ImageButton 
+            android:id="@+id/more_sub_btn4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:background="@drawable/selector_more_button_8"/>
+        
+    </LinearLayout>
+    
+</RelativeLayout>
+
+    

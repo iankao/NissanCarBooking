@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout 
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+	    
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+	        
+            <TextView 
+                android:id="@+id/my_car_number_tv"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="我的車號："
+	            android:textSize="22sp"/>
+            
+            <Spinner 
+                android:id="@+id/my_car_number_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/my_car_number_tv">
+            </Spinner>
+            
+        </RelativeLayout>
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            
+            <TextView 
+                android:id="@+id/my_name"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="姓  名："
+                android:gravity="right"
+                android:textSize="16sp"/>
+            
+            <EditText
+                android:id="@+id/my_name_edit_text"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/my_name"
+                android:ems="10" >
+
+            </EditText>
+            
+        </LinearLayout>
+
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            
+            <TextView 
+                android:id="@+id/my_phone_number"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="手機號碼："
+                android:gravity="right"
+                android:textSize="16sp"/>
+            
+            <EditText
+                android:id="@+id/my_phone_number_edit_text"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/my_phone_number"
+                android:ems="10" >
+
+            </EditText>
+            
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            
+            <TextView 
+                android:id="@+id/my_email_add"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Email信箱："
+                android:gravity="right"
+                android:textSize="16sp"/>
+            
+            <EditText
+                android:id="@+id/my_email_add_edit_text"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/my_email_add"
+                android:ems="10" >
+
+            </EditText>
+            
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            
+            <Button
+		         android:id="@+id/sub_tab_button_01"
+		         android:layout_width="0dp"
+		         android:layout_weight="1"
+		         android:layout_height="50dp"
+		         android:text="選擇服務地點"
+		         android:background="@drawable/but_book_book_record_on"  />
+		
+		     <Button
+		         android:id="@+id/sub_tab_button_02"
+		         android:layout_width="0dp"
+		         android:layout_weight="1"
+		         android:layout_height="50dp"
+		         android:text="我的常用據點"
+		         android:background="@drawable/selector_booking_service_tab" />
+            
+        </LinearLayout>
+        
+        <RelativeLayout 
+            android:id="@+id/choosing_service_location_content_rl"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+            
+        </RelativeLayout>
+
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:layout_margin="10dp"
+            android:padding="10dp">
+            
+            <TextView 
+                android:id="@+id/branch_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="地址 (請先選擇服務廠)"
+                android:textSize="22sp"/>
+            
+            <TextView 
+                android:id="@+id/branch_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="電話 (請先選擇服務廠)"
+                android:layout_below="@id/branch_address"
+                android:textSize="22sp"/>
+            
+            <RelativeLayout
+                android:id="@+id/view_direction_in_googlemap_rl"
+                android:clickable="true" 
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:background="#8a8a8a"
+                android:layout_marginTop="30dp"
+                android:layout_below="@id/branch_number">
+                
+                <ImageView 
+                    android:id="@+id/show_in_google_map_iv"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/icon_service_point_point"/>
+                
+                <TextView 
+	                android:id="@+id/show_in_google_map_tv"
+	                android:layout_width="wrap_content"
+	                android:layout_height="50dp"
+	                android:gravity="center_vertical"
+	                android:text="在 Google Map 中檢視  "
+	                android:layout_toRightOf="@id/show_in_google_map_iv"
+	                android:textSize="22sp"/>
+                
+            </RelativeLayout>
+            
+        </RelativeLayout>
+        
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:background="#3D3D3D">
+            
+            <TextView 
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="選擇服務時間:"
+                android:textSize="22sp"/>
+            
+            <Spinner 
+                android:id="@+id/service_date_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/title">
+            </Spinner>
+            
+            <Spinner 
+                android:id="@+id/service_time_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/service_date_spinner">
+            </Spinner>
+            
+            <TextView 
+                android:id="@+id/ps_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*預約日期須於預約進廠日前兩天設定完成（若你希望於3月3日預約入廠服務，請於3月1日前完成預約動作）。"
+                android:layout_below="@id/service_time_spinner"
+                android:layout_marginTop="30dp"
+                android:textSize="22sp"/>
+            
+            <TextView 
+                android:id="@+id/ps_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22sp"
+                android:text="*定期保養（含洗車）所需時間規定保里程施作項目多寡不同，約1.5小時~2.5小時"
+                android:layout_below="@id/ps_1"
+                android:textSize="22sp"/>
+            
+            <TextView 
+                android:id="@+id/ps_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22sp"
+                android:text="*18:00以後因以值班技師為主，故無法指定人員"
+                android:layout_below="@id/ps_2"
+                android:textSize="22sp"/>
+            
+        </RelativeLayout>
+        
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:background="#3D3D3D">
+            
+            <TextView 
+                android:id="@+id/choose_waiter_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="選擇服務接待："
+                android:textSize="22sp"/>
+            
+            <Spinner 
+                android:id="@+id/choose_waiter_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/choose_waiter_tv">
+            </Spinner>
+            
+            <TextView 
+                android:id="@+id/choose_engineer_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="選擇服務技師："
+                android:textSize="22sp"
+            	android:layout_below="@id/choose_waiter_spinner"/>
+            
+            <Spinner 
+                android:id="@+id/choose_engineer_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/choose_engineer_tv">
+            </Spinner>
+            
+        </RelativeLayout>
+        
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:background="#3D3D3D">
+            
+            <TextView 
+                android:id="@+id/current_driven_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*目前行駛里程："
+                android:textSize="22sp"/>
+            
+            <EditText
+                android:id="@+id/current_driven_distance_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/current_driven_distance"
+                android:ems="10" >
+
+            </EditText>
+            
+            <TextView 
+                android:id="@+id/service_items"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="保修項目(可複選)："
+                android:textSize="22sp"
+                android:layout_below="@id/current_driven_distance_edit_text"/>
+            
+            <LinearLayout
+                android:id="@+id/choose_service_raidogroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/service_items"
+                android:orientation="vertical" >
+                <CheckBox 
+                    android:id="@+id/maintenance_cb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="定期保養"/>
+                <CheckBox 
+                    android:id="@+id/repair_cb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="一般維修"/>
+            </LinearLayout>
+            
+            <TextView 
+                android:id="@+id/ps_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="若您需要其他服務，請電洽服務廠"
+                android:textSize="18sp"
+                android:textColor="#575757"
+                android:layout_below="@id/choose_service_raidogroup"/>
+            
+            <TextView 
+                android:id="@+id/wait_in_factory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="在場等候："
+                android:textSize="22sp"
+                android:layout_below="@id/ps_4"/>
+            
+            <RadioGroup 
+                android:id="@+id/if_wait_in_factory_radiogroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:checkedButton="@+id/yes"
+                android:layout_below="@id/wait_in_factory">
+                <RadioButton 
+                    android:id="@+id/yes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="是"/>
+                <RadioButton 
+                    android:id="@+id/no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="否"/>
+            </RadioGroup>
+            
+            <TextView 
+                android:id="@+id/ps_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="備註："
+                android:textSize="22sp"
+                android:layout_below="@id/if_wait_in_factory_radiogroup"/>
+            
+            <EditText
+                android:id="@+id/feed_back_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ps_title"
+                android:ems="10" >
+            </EditText>
+        </RelativeLayout>
+        
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp">
+            
+	        <Button 
+	            android:id="@+id/booking_service_btn"
+	            android:layout_width="150dp"
+	            android:layout_height="wrap_content"
+	            android:textColor="#ffffff"
+	            android:background="#E00013"
+	            android:padding="3dp"
+	            android:textSize="22dp"
+	            android:layout_centerInParent="true"
+	            android:text="確認送出"/>
+	        
+	     </RelativeLayout>
+	        
+    </LinearLayout>
+
+</ScrollView>

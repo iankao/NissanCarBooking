@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#474747"
+            android:padding="20dp">
+            
+            <TextView 
+                android:id="@+id/query_points_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="查詢紅利積點:"
+                android:textSize="18sp"/>
+            
+            <Spinner 
+                android:id="@+id/query_points_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/query_points_tv"/>
+            
+        </RelativeLayout>
+        
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp">
+            
+            <TextView 
+                android:id="@+id/last_date_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="截至昨日 0000-00-00 止"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"/>
+            
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="紅利積點詳細紀錄如下："
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:layout_below="@id/last_date_tv"/>
+            
+        </RelativeLayout>
+        
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#474747"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:padding="10dp">
+            
+            <TextView 
+                android:id="@+id/points_sum_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="---- 點"
+                android:textColor="#ED1C38"
+                android:textSize="18sp"/>
+            
+            <TextView 
+                android:id="@+id/last_maintenance_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="上次返廠日期為 0000/00/00 (--)"
+                android:layout_below="@id/points_sum_tv"
+                android:textSize="18sp"/>
+            
+        </RelativeLayout>
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="網站提供自今日起一年內紅利，於每日23時批次統計"
+            android:layout_below="@id/points_sum_tv"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="#9C9C9C"
+            android:textSize="16sp"/>
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的紅利紀錄："
+            android:layout_below="@id/points_sum_tv"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:textSize="18sp"/>
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            
+            <LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:background="#262626">
+				
+				<TextView 
+				    android:id="@+id/bonus_history_title_tv1"
+				    android:layout_width="0dp"
+				    android:layout_weight="3"
+				    android:layout_height="wrap_content"
+				    android:text="日期"
+				    android:paddingTop="10sp"
+				    android:paddingBottom="10sp"
+				    android:textSize="18sp"
+				    android:gravity="center"/>
+				
+				<TextView 
+				    android:id="@+id/bonus_history_title_tv2"
+				    android:layout_width="0dp"
+				    android:layout_weight="2"
+				    android:layout_height="wrap_content"
+				    android:text="點數"
+				    android:paddingTop="10sp"
+				    android:paddingBottom="10sp"
+				    android:textSize="18sp"
+				    android:gravity="center"/>
+				
+				<TextView 
+				    android:id="@+id/bonus_history_title_tv3"
+				    android:layout_width="0dp"
+				    android:layout_weight="3"
+				    android:layout_height="wrap_content"
+				    android:text="項目"
+				    android:paddingTop="10sp"
+				    android:paddingBottom="10sp"
+				    android:textSize="18sp"
+				    android:gravity="center"/>
+     
+			</LinearLayout>
+            
+            <LinearLayout 
+            android:id="@+id/bonus_history_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+            
+        </LinearLayout>
+        
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#474747"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:padding="10dp">
+            
+            <TextView 
+                android:id="@+id/points_sum_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="設定主要紅利累計車輛："
+                android:textSize="18sp"/>
+            
+            <RadioGroup 
+                android:id="@+id/main_bonus_car_radiogroup"
+            	android:layout_width="match_parent"
+            	android:layout_height="wrap_content"
+            	android:orientation="vertical"
+            	android:layout_below="@id/points_sum_tv"/>
+            
+        </RelativeLayout>
+        
+        <Button 
+            android:id="@+id/change_main_points_car_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textColor="#fff"
+            android:layout_gravity="right"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="#C20017"
+            android:padding="10dp"
+            android:text="更變紅利累計車輛"/>
+        
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal" >
+		
+		<Button
+		    android:id="@+id/button1"
+		    android:layout_width="0dp"
+		    android:layout_weight="1"
+		    android:layout_height="50dp"
+		    android:text="預約保修"
+		    android:textColor="#fff"
+		    android:background="@drawable/but_book_book_record_on" />
+		
+		<Button
+		    android:id="@+id/button2"
+		    android:layout_width="0dp"
+		    android:layout_weight="1"
+		    android:layout_height="50dp"
+		    android:text="預約保修紀錄" 
+		    android:textColor="#fff"
+		    android:background="@drawable/selector_booking_service_tab" />
+	
+	</LinearLayout>
+	    
+	<RelativeLayout 
+	    android:id="@+id/service_booking_content_rl"
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="1">
+	    
+	    
+	</RelativeLayout>
+    
+</LinearLayout>

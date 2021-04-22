@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:background="#474747" >
+            
+            <TextView 
+                android:id="@+id/my_car_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="車  牌："
+                android:textSize="22sp"/>
+            
+            <Spinner 
+                android:id="@+id/choosing_plate_no_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/my_car_number"/>
+            
+        </RelativeLayout>
+        
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp">
+            
+            <TextView 
+                android:id="@+id/my_car_type_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="車  型："
+                android:textSize="18sp"/>
+            
+            <TextView 
+                android:id="@+id/my_car_type_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="車  型"
+                android:textSize="18sp"
+                android:layout_toRightOf="@id/my_car_type_title"/>
+            
+        </RelativeLayout>
+        
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp">
+            
+            <TextView 
+                android:id="@+id/last_service_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="最近一次返廠時間："
+                android:textSize="18sp"/>
+            
+            <TextView 
+                android:id="@+id/last_service_time_stamp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="YYYY-MM-DD"
+                android:textSize="18sp"
+                android:layout_toRightOf="@id/last_service_time">
+            </TextView>
+            
+        </RelativeLayout>
+        
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp">
+            
+            <TextView 
+                android:id="@+id/next_service_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="此車紅利點數尚餘："
+                android:textSize="18sp"/>
+            
+            <TextView 
+                android:id="@+id/points_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="---點"
+                android:textSize="18sp"
+                android:layout_toRightOf="@id/next_service_time">
+            </TextView>
+            
+        </RelativeLayout>
+        
+        <RelativeLayout 
+            android:id="@+id/setting_main_credit_car_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="16dp"
+            android:layout_gravity="left"
+            android:clickable="true"
+            android:padding="5dp"
+            android:background="#C4C4C4">
+            
+            <ImageView
+                android:id="@+id/setup_main_credit_car_iv"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignBottom="@+id/setup_main_credit_car_tv"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/icon_select_car" />
+            
+            <TextView 
+                android:id="@+id/setup_main_credit_car_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="設定主要紅利累積車輛 "
+                android:gravity="center_vertical"
+                android:layout_toRightOf="@id/setup_main_credit_car_iv"
+                android:textSize="18sp"
+                android:textColor="#000"/>
+        </RelativeLayout>
+        
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22sp"
+            android:layout_marginBottom="22sp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:paddingBottom="20dp"
+            android:visibility="gone"
+            android:background="#474747">
+            
+            <TextView 
+                android:id="@+id/your_personal_profit_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="您的專屬優惠"
+                android:textSize="18sp"/>
+            
+            <TextView 
+                android:id="@+id/your_personal_profit_paragrph1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*準時6個月定保可憑紅利折抵機油芯1個，價值198元，您目前尚缺紅利 6400 點"
+                android:layout_below="@id/your_personal_profit_title"
+                android:paddingTop="22sp">
+            </TextView>
+            
+            <TextView 
+                android:id="@+id/your_personal_profit_paragrph2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*今年享有維修零件82折專屬優惠"
+                android:layout_below="@id/your_personal_profit_paragrph1"
+                android:paddingTop="22sp">
+            </TextView>
+            
+            <TextView 
+                android:id="@+id/your_personal_profit_paragrph3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*今年已定保兩次以上，明年可享有維修零件優惠88折"
+                android:layout_below="@id/your_personal_profit_paragrph2"
+                android:paddingTop="22sp">
+            </TextView>
+            
+        </RelativeLayout>
+        
+        <Button 
+            android:id="@+id/edit_owner_personal_profile_btn"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="修改車主資料"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginTop="140dp"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:background="#E00013"/>
+        
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/expandalbe_listview_item_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp">
+    
+    <LinearLayout 
+        android:id="@+id/chidview_ll_01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+        <TextView 
+            android:id="@+id/title_01"
+	        android:layout_width="0dp"
+	        android:layout_weight="2"
+	        android:layout_height="30dp"
+	        android:textSize="16dp"
+	        android:layout_marginLeft="4dp"
+	        android:gravity="center_vertical|right"
+	        android:text="服務廠："/>
+        
+        <TextView 
+            android:id="@+id/value_01"
+	        android:layout_width="0dp"
+	        android:layout_weight="3"
+	        android:layout_height="30dp"
+	        android:textSize="16dp"
+	        android:layout_marginLeft="4dp"
+	        android:gravity="center_vertical|left"
+	        android:text="服務廠"/>
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/chidview_ll_02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+        <TextView 
+            android:id="@+id/title_02"
+	        android:layout_width="0dp"
+	        android:layout_weight="2"
+	        android:layout_height="30dp"
+	        android:textSize="16dp"
+	        android:layout_marginLeft="4dp"
+	        android:gravity="center_vertical|right"
+	        android:text="服務接待："/>
+        
+        <TextView 
+            android:id="@+id/value_02"
+	        android:layout_width="0dp"
+	        android:layout_weight="3"
+	        android:layout_height="30dp"
+	        android:textSize="16dp"
+	        android:layout_marginLeft="4dp"
+	        android:gravity="center_vertical|left"
+	        android:text="服務接待"/>
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/chidview_ll_03"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+        <TextView 
+            android:id="@+id/title_03"
+	        android:layout_width="0dp"
+	        android:layout_weight="2"
+	        android:layout_height="30dp"
+	        android:textSize="16dp"
+	        android:layout_marginLeft="4dp"
+	        android:gravity="center_vertical|right"
+	        android:text="服務技師："/>
+        
+        <TextView 
+            android:id="@+id/value_03"
+	        android:layout_width="0dp"
+	        android:layout_weight="3"
+	        android:layout_height="30dp"
+	        android:textSize="16dp"
+	        android:layout_marginLeft="4dp"
+	        android:gravity="center_vertical|left"
+	        android:text="服務技師"/>
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/chidview_ll_04"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+        <TextView 
+            android:id="@+id/title_04"
+	        android:layout_width="0dp"
+	        android:layout_weight="2"
+	        android:layout_height="30dp"
+	        android:textSize="16dp"
+	        android:layout_marginLeft="4dp"
+	        android:gravity="center_vertical|right"
+	        android:text="預約狀態："/>
+        
+        <TextView 
+            android:id="@+id/value_04"
+	        android:layout_width="0dp"
+	        android:layout_weight="3"
+	        android:layout_height="30dp"
+	        android:textSize="16dp"
+	        android:layout_marginLeft="4dp"
+	        android:gravity="center_vertical|left"
+	        android:text="預約狀態"/>
+        
+    </LinearLayout>
+        
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+        <Button 
+            android:id="@+id/cancel_btn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="30dp"
+            android:background="@drawable/but_book_cancel_book_01"
+            android:text="  取消"/>
+        
+        <Button 
+            android:id="@+id/call_btn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="30dp"
+            android:background="@drawable/but_book_callcenter"
+            android:text="    撥電話"/>
+        
+        <Button 
+            android:id="@+id/direction_btn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="30dp"
+            android:background="@drawable/but_book_navigate"
+            android:text="    導航"/>
+        
+    </LinearLayout>
+    
+</LinearLayout>
+

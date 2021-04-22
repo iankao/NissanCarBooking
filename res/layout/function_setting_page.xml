@@ -1,0 +1,151 @@
+
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical"
+	    android:padding="20dp" >
+	    
+	    <Button 
+	        android:id="@+id/account_logout_tv"
+	        android:layout_width="match_parent"
+	        android:layout_height="50dp"
+	        android:gravity="center"
+	        android:text="會員帳號登出"
+	        android:textSize="22dp"
+	        android:textColor="#ffffff"
+	        android:background="#E00013"/>
+	    
+	    <RelativeLayout 
+	        android:id="@+id/push_notification_rl"
+	        android:layout_marginTop="30dp"
+	        android:layout_width="wrap_content"
+	        android:layout_height="50dp"
+	        android:clickable="true" >
+	        
+	        <TextView 
+	            android:id="@+id/push_notification_tv"
+	            android:layout_width="wrap_content"
+	            android:layout_height="match_parent"
+	            android:layout_marginRight="50dp"
+	            android:gravity="left|center_vertical"
+	            android:text="訊息推播設定"
+	            android:textSize="22sp"
+	            android:textColor="#8A8A8A"/>
+	        
+	        <ToggleButton 
+	            android:textOff=""
+	            android:textOn=""
+		        android:layout_width="70dp"
+		        android:layout_height="35dp"
+		        android:layout_centerVertical="true"
+		        android:layout_toRightOf="@id/push_notification_tv"
+		        android:background="@drawable/selector_toggle_btn_push" />
+	        
+	    </RelativeLayout>
+	    
+	    
+	    <RelativeLayout 
+	        android:id="@+id/app_rate_rl"
+	        android:layout_marginTop="30dp"
+	        android:layout_width="match_parent"
+	        android:layout_height="50dp"
+	        android:clickable="true"
+	        android:background="#CFCFCF">
+	        
+	        <ImageView 
+	            android:id="@+id/app_rate_iv"
+	            android:layout_width="50dp"
+	            android:layout_height="match_parent"
+	            android:background="@drawable/icon_set_rate"/>
+	        
+	        <TextView 
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:gravity="left|center_vertical"
+	            android:text="APP評分"
+	            android:textSize="22dp"
+	            android:textColor="#8A8A8A"
+	            android:layout_toRightOf="@id/app_rate_iv"/>
+	        
+	    </RelativeLayout>
+	    
+	    <RelativeLayout 
+	        android:id="@+id/terms_rl"
+	        android:layout_marginTop="25dp"
+	        android:layout_width="match_parent"
+	        android:layout_height="50dp"
+	        android:clickable="true"
+	        android:background="#CFCFCF">
+	        
+	        <ImageView 
+	            android:id="@+id/terms_iv"
+	            android:layout_width="50dp"
+	            android:layout_height="match_parent"
+	            android:background="@drawable/icon_set_terms"/>
+	        
+	        <TextView 
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:gravity="left|center_vertical"
+	            android:text="會員條款"
+	            android:textSize="22dp"
+	            android:textColor="#8A8A8A"
+	            android:layout_toRightOf="@id/terms_iv"/>
+	        
+	    </RelativeLayout>
+	    
+	    <RelativeLayout 
+	        android:id="@+id/privacy_rl"
+	        android:layout_marginTop="25dp"
+	        android:layout_width="match_parent"
+	        android:layout_height="50dp"
+	        android:clickable="true"
+	        android:background="#CFCFCF">
+	        
+	        <ImageView 
+	            android:id="@+id/privacy_iv"
+	            android:layout_width="50dp"
+	            android:layout_height="match_parent"
+	            android:background="@drawable/icon_set_privacy"/>
+	        
+	        <TextView 
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:gravity="left|center_vertical"
+	            android:text="隱私權聲明"
+	            android:textSize="22dp"
+	            android:textColor="#8A8A8A"
+	            android:layout_toRightOf="@id/privacy_iv"/>
+	        
+	    </RelativeLayout>
+	    
+	    <RelativeLayout 
+	        android:layout_marginTop="25dp"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:clickable="true">
+	    
+		    <TextView 
+		        android:id="@+id/version_tv01"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:gravity="left|center_vertical"
+		        android:text="版本資訊:"
+		        android:textSize="22dp"
+		        android:textColor="#8A8A8A"/>
+		    
+		    <TextView 
+		        android:id="@+id/version_tv02"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:gravity="left|center_vertical"
+		        android:textSize="22dp"
+		        android:layout_toRightOf="@id/version_tv01"
+		        android:textColor="#8A8A8A"/>
+		    
+	    </RelativeLayout>
+	    
+	    
+	</LinearLayout>
+
+    
